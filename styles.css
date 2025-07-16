@@ -1,97 +1,142 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #f4f9ff;
   color: #333;
 }
 
 header {
   background-color: #004080;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-.tagline {
-  font-style: italic;
+.logo img {
+  max-height: 80px;
+  float: left;
 }
 
-nav ul {
+nav .nav {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 0;
   display: flex;
   justify-content: center;
+  background: #0066cc;
 }
 
-nav li {
-  margin: 0 15px;
+nav .nav > li {
+  position: relative;
 }
 
-nav a {
+nav .nav li a {
+  display: block;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+}
+
+nav .dropdown {
+  display: none;
+  position: absolute;
+  background: #0066cc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+}
+
+nav li:hover .dropdown {
+  display: block;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  max-height: 300px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  animation: slide 30s infinite linear;
+}
+
+.slides img {
+  width: 100vw;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-700%);}
 }
 
 .intro {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.intro img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e6f2ff;
   padding: 30px;
+}
+
+.block {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.explore {
+  padding: 20px;
+  background-color: #ccddff;
+}
+
+.philosophies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.philosophies li {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 30%;
   text-align: center;
 }
 
 footer {
-  background-color: #e0e0e0;
+  background-color: #004080;
+  color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 50px;
-}
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
   padding: 20px;
 }
 
-.gallery-container img {
-  width: 200px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+footer a {
+  color: white;
+  text-decoration: underline;
 }
 
-.gallery-container img:hover {
-  transform: scale(1.1);
+.socials img {
+  width: 30px;
+  margin: 0 10px;
 }
-.calendar ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.calendar li {
-  background: #e0f0ff;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 6px;
-  max-width: 300px;
-}
-.portal form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.portal input, .portal button {
-  padding: 10px;
-  width: 80%;
-  max-width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#login-message {
-  margin-top: 10px;
-  color: #004080;
-}
-
