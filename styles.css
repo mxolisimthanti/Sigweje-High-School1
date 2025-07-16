@@ -45,3 +45,53 @@ footer {
   padding: 10px;
   margin-top: 50px;
 }
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-container img {
+  width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+.calendar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.calendar li {
+  background: #e0f0ff;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 300px;
+}
+.portal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.portal input, .portal button {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-message {
+  margin-top: 10px;
+  color: #004080;
+}
+
