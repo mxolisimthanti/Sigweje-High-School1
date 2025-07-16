@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sigweje High School</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-<body onload="showGreeting()">
+<body>
+
   <header>
+    <div class="logo">
+      <!-- Replace src with your logo file -->
+      <img src="images/logo.png" alt="Sigweje High School Logo">
+    </div>
     <h1>Sigweje High School</h1>
-    <p class="tagline">Empowering minds since 1996</p>
     <nav>
-      <ul>
+      <ul class="nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li>
+          <a href="#">About Us</a>
+          <ul class="dropdown">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Staff</a></li>
+            <li><a href="#">School Uniform</a></li>
+            <li><a href="#">Alumni & Friends</a></li>
+          </ul>
+        </li>
         <li><a href="#">Admissions</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#">Our School</a>
+          <ul class="dropdown">
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Culture</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="gallery">
-  <h2>School Gallery</h2>
-  <div class="gallery-container">
-    <img src="img1.jpg" alt="Event 1">
-    <img src="img2.jpg" alt="Learners in class">
-    <img src="img3.jpg" alt="Sports day">
-  </div>
-</section>
-    <section class="intro">
-      <h2>Welcome to Sigweje High</h2>
-      <p id="greeting"></p>
-      <p>Located at HELPMEKAAR ROAD, WASBANK, LADYSMITH, we serve Grade 8 to 12 learners with pride and excellence.</p>
-    </section>
-    <section class="calendar">
-  <h2>Upcoming Events</h2>
-  <ul id="event-list"></ul>
-</section>
-<section class="portal">
-  <h2>Student Login</h2>
-  <form id="login-form">
-    <input type="text" id="username" placeholder="Student ID" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button type="submit">Login</button>
-  </form>
-  <p id="login-message"></p>
-</section>
+  <section class="slider">
+    <div class="slides">
+      <img src="images/img1.jpg" alt="School Photo 1">
+      <img src="images/img2.jpg" alt="School Photo 2">
+      <img src="images/img3.jpg" alt="School Photo 3">
+      <img src="images/img4.jpg" alt="School Photo 4">
+      <img src="images/img5.jpg" alt="School Photo 5">
+      <img src="images/img6.jpg" alt="School Photo 6">
+      <img src="images/img7.jpg" alt="School Photo 7">
+    </div>
+  </section>
 
-  </main>
+  <section class="intro">
+    <div class="intro-text">
+      <h2>Welcome to Sigweje High School</h2>
+      <p>Sigweje High School, established in 1996, is located in Ladysmith, KwaZulu-Natal near GG Shopping Centre. We serve Grade 8 to Grade 12 learners, fostering academic excellence and cultural pride.</p>
+    </div>
+    <img src="images/welcome.jpg" alt="Welcome Image">
+  </section>
+
+  <section class="overview">
+    <div class="block">
+      <h3>Academics</h3>
+      <p>We offer a strong curriculum and a dedicated staff that supports academic growth and exam success.</p>
+    </div>
+    <div class="block">
+      <h3>Sport Success</h3>
+      <p>Our students shine in athletics, football, netball, and more — building discipline and teamwork.</p>
+    </div>
+    <div class="block">
+      <h3>Cultural Activities</h3>
+      <p>Drama, music, heritage days — our learners engage in vibrant cultural expression throughout the year.</p>
+    </div>
+  </section>
+
+  <section class="explore">
+    <h2>Explore Sigweje High School</h2>
+    <ul class="philosophies">
+      <li>Respect for all</li>
+      <li>Learning through effort</li>
+      <li>Teamwork and unity</li>
+      <li>Celebrating diversity</li>
+      <li>Empowering future leaders</li>
+      <li>Service to community</li>
+      <li>Honesty and accountability</li>
+    </ul>
+  </section>
 
   <footer>
-    <p>&copy; 1996–2025 Sigweje High School. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+    <p><a href="#">Privacy Policy</a> | © 1996–2025 Sigweje High School</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
